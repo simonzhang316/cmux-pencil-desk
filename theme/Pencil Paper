@@ -1,0 +1,44 @@
+# Pencil Paper — a warm graph-paper theme for cmux / Ghostty.
+# Muted paper background, graphite text, ink-colored accents, no neon.
+background = #d3cebf
+foreground = #221f1b
+cursor-color = #221f1b
+cursor-text = #d3cebf
+selection-background = #bdb6a3
+selection-foreground = #221f1b
+
+# The palette is tuned for Claude Code's `/theme` -> "Light mode (ANSI colors only)",
+# where every color comes from these 16 slots:
+#   0 body text · 8 dimmed/progress text · 9 Claude orange · 4 permission/suggestion blue
+#   1/2 removed/added and error/success · 3 warning · 5 skills · 6 plan mode
+#   7 your message background and prompt border · 15 command output background
+palette = 0=#221f1b
+palette = 1=#b0402a
+palette = 2=#3f6e4e
+palette = 3=#94600f
+palette = 4=#27477e
+palette = 5=#7d4470
+palette = 6=#3a6f75
+palette = 7=#c7c1b1
+palette = 8=#857f75
+palette = 9=#c25a2c
+palette = 10=#4c7c5b
+palette = 11=#a8701e
+palette = 12=#355a96
+palette = 13=#8b4f7a
+palette = 14=#467f86
+palette = 15=#bfb8a6
+
+# Handwritten monospace font: Xiaolai Mono (OFL-1.1), https://github.com/lxgw/kose-font
+# Remove these two lines if you prefer your own font.
+font-family = "Xiaolai Mono"
+# Route CJK ranges to the same font. cmux auto-injects a CJK fallback font otherwise;
+# see ghostty/config.snippet for how to turn that off.
+font-codepoint-map = U+3000-U+303F,U+3400-U+4DBF,U+4E00-U+9FFF,U+F900-U+FAFF,U+FE30-U+FE4F,U+FF00-U+FFEF=Xiaolai Mono
+
+# Blue graph-paper background: 14pt squares with faint paper grain, tiled.
+# Use an absolute path (replace YOU with your macOS user name).
+background-image = /Users/YOU/.config/ghostty/pencil-paper-grid.png
+background-image-repeat = true
+background-image-fit = none
+background-image-opacity = 1

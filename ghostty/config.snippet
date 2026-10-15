@@ -1,0 +1,8 @@
+# Add this line to ~/.config/ghostty/config (create the file if it does not exist).
+#
+# cmux automatically maps CJK characters to a fallback font, and that mapping wins over
+# anything a theme sets. cmux skips the injection as soon as your Ghostty config contains
+# any `font-codepoint-map`, so this one maps a single unused private-use code point and
+# leaves CJK to the theme (Pencil Paper routes it to Xiaolai Mono).
+# Only needed if you read or write CJK text and want it in the handwritten font too.
+font-codepoint-map = U+E000=Xiaolai Mono
